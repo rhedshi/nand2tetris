@@ -4,7 +4,7 @@
 // File name: projects/01/Or8Way.hdl
 
 /**
- * 8-way Or: 
+ * 8-way Or:
  * out = (in[0] or in[1] or ... or in[7])
  */
 
@@ -14,4 +14,12 @@ CHIP Or8Way {
 
     PARTS:
     // Put your code here:
+    Or(a=in[0], b=in[1], out=out1);
+    Or(a=out1, b=in[2], out=out2);
+    Or(a=out2, b=in[3], out=out3);
+    Or(a=out3, b=in[4], out=out4);
+    Or(a=out4, b=in[5], out=out5);
+    Or(a=out5, b=in[5], out=out6);
+    Or(a=out6, b=in[6], out=out7);
+    Or(a=out7, b=in[7], out=out);
 }
