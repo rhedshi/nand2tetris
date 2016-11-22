@@ -1,0 +1,12 @@
+# HDL - generated comparison files
+*.out
+
+# Python - byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Tools
+/tools/
+
+.DS_Store
